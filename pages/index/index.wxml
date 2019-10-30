@@ -1,1 +1,2 @@
-<searchbar></searchbar>
+<searchbar isnavigator="{{true}}"></searchbar>
+<view>这是首页</view>

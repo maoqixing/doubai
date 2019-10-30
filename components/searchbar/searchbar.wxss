@@ -12,3 +12,17 @@
   background-repeat: no-repeat;
   background-size: 8%;
 }
+.search-input-group{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+}
+.search-input{
+  min-height: 40rpx;
+  height: 40rpx;
+  font-size: 12px;
+
+}
