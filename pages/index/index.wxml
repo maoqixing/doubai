@@ -42,12 +42,7 @@
              </image>
           </view>
           <view class="item-title">海王海王海王海王海王</view>
-          <view class="rate-group">
-            <image wx:for="{{[1,2,3]}}" src="/images/rate_light.png"></image>
-            <image src="/images/rate_half.png"></image>
-            <image src="/images/rate_gray.png"></image>
-            <text>8.0</text>
-          </view>
+        <stars rate="7.5" fontsize="30" fontcolor="#000"></stars>
        </view>
      </navigator>
    </scroll-view>
