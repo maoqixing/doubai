@@ -13,7 +13,7 @@
              </image>
           </view>
           <view class="item-title">{{item.title}}</view>
-        <stars rate="7.5" fontsize="30" fontcolor="#000"></stars>
+        <stars rate="{{item.rating.value}}" fontsize="30" fontcolor="#000"></stars>
        </view>
      </navigator>
    </scroll-view>
@@ -32,7 +32,7 @@
              </image>
           </view>
           <view class="item-title">{{item.title}}</view>
-        <stars rate="7.5" fontsize="30" fontcolor="#000"></stars>
+        <stars rate="{{item.rating.value}}" fontsize="30" fontcolor="#000"></stars>
        </view>
      </navigator>
    </scroll-view>
@@ -51,7 +51,7 @@
              </image>
           </view>
           <view class="item-title">{{item.title}}</view>
-        <stars rate="7.5" fontsize="30" fontcolor="#000"></stars>
+        <stars rate="{{item.rating.value}}" fontsize="30" fontcolor="#000"></stars>
        </view>
      </navigator>
    </scroll-view>
