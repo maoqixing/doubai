@@ -1,47 +1,56 @@
 <searchbar isnavigator="{{true}}"></searchbar>
+<!-- 电影 -->
 <view class="module-group">
    <view class="module-top">
      <view class="module-title">电影</view>
      <navigator class="module-more">更多</navigator>
    </view>
    <scroll-view class="module-scroll-view" scroll-x="{{true}}">
-     <navigator class="item-navigator">
+    <navigator wx:for="{{movices}}" wx:key="{{item.title}}" class="item-navigator">
        <view class="item-group">
           <view class="thumbnail-group">
-             <image class="thumbnail" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2541280047.webp">
+             <image class="thumbnail" src="{{item.cover.url}}">
              </image>
           </view>
-          <view class="item-title">海王</view>
+          <view class="item-title">{{item.title}}</view>
+        <stars rate="7.5" fontsize="30" fontcolor="#000"></stars>
        </view>
      </navigator>
-
-     <navigator class="item-navigator">
+   </scroll-view>
+</view>
+<!-- 电视剧 -->
+<view class="module-group">
+   <view class="module-top">
+     <view class="module-title">电视剧</view>
+     <navigator class="module-more">更多</navigator>
+   </view>
+   <scroll-view class="module-scroll-view" scroll-x="{{true}}">
+    <navigator wx:for="{{tvs}}" wx:key="{{item.title}}" class="item-navigator">
        <view class="item-group">
           <view class="thumbnail-group">
-             <image class="thumbnail" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2572166063.webp">
+             <image class="thumbnail" src="{{item.cover.url}}">
              </image>
           </view>
-          <view class="item-title">海王</view>
+          <view class="item-title">{{item.title}}</view>
+        <stars rate="7.5" fontsize="30" fontcolor="#000"></stars>
        </view>
      </navigator>
-
-     <navigator class="item-navigator">
+   </scroll-view>
+</view>
+<!-- 综艺 -->
+<view class="module-group">
+   <view class="module-top">
+     <view class="module-title">综艺</view>
+     <navigator class="module-more">更多</navigator>
+   </view>
+   <scroll-view class="module-scroll-view" scroll-x="{{true}}">
+    <navigator wx:for="{{shows}}" wx:key="{{item.title}}" class="item-navigator">
        <view class="item-group">
           <view class="thumbnail-group">
-             <image class="thumbnail" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2572166063.webp">
+             <image class="thumbnail" src="{{item.cover.url}}">
              </image>
           </view>
-          <view class="item-title">海王</view>
-       </view>
-     </navigator>
-
-     <navigator class="item-navigator">
-       <view class="item-group">
-          <view class="thumbnail-group">
-             <image class="thumbnail" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2572166063.webp">
-             </image>
-          </view>
-          <view class="item-title">海王海王海王海王海王</view>
+          <view class="item-title">{{item.title}}</view>
         <stars rate="7.5" fontsize="30" fontcolor="#000"></stars>
        </view>
      </navigator>
